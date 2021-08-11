@@ -1,0 +1,20 @@
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Done?</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="todo in $ctrl.todos">
+              <td> {{todo.id}}</td>
+              <td> {{todo.title}}</td>
+              <td> {{todo.description}}</td>
+              <td> {{todo.done}}</td>
+            </tr>
+        </tbody>
+    </table>
+  </div>
